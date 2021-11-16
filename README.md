@@ -1,2 +1,2 @@
 # OSINT
-OSINT project for ITMS at IIT by Group 2
+OSINT project for ITMS at IIT by Group 6
