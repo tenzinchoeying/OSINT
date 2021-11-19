@@ -1,0 +1,55 @@
+from tkinter import *
+window = Tk()
+window.geometry("1100x1000")
+window.title("OSINT Dashboard")
+
+
+def func(message):
+    print(message)
+    
+lbl=Label(window, text="OSINT Dashboard", fg='white', bg = "#68befc",  font=("Helvetica", 100))
+lbl.grid(row = 0, column = 0,columnspan = 6)
+
+bFacebook = Button(window, text = "Facebook", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("Facebook Button Works"))
+bFacebook.grid(row = 1, column = 0, pady = 35)
+
+bGoogle = Button(window, text = "Google+", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("Google+ Button Works"))
+bGoogle.grid(row = 1, column = 2, pady = 35)
+
+
+bMetaData = Button(window, text = "MetaData \nSearch", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("Metasearch Data Button Works"))
+bMetaData.grid(row = 1, column = 4, pady = 35)
+
+bTwitter = Button(window, text = "Twitter", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("Twitter Button Works"))
+bTwitter.grid(row = 2, column = 0, pady = 35)
+
+bInsta = Button(window, text = "Instagram", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("Instagram Button Works"))
+bInsta.grid(row = 2, column = 2, pady = 35)
+
+
+bEXIF = Button(window, text = "EXIF Data \nSearch", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("EXIF Data Button Works"))
+bEXIF.grid(row = 2, column = 4, pady = 35)
+
+
+bLinkedin = Button(window, text = "Linkedin", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("Linkedin Button Works"))
+bLinkedin.grid(row = 3, column = 0, pady = 35)
+
+bWebCrawler = Button(window, text = "WebCrawler", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("WebCrawler Button Works"))
+bWebCrawler.grid(row = 3, column = 2, pady = 35)
+
+
+bOther = Button(window, text = "Other \nSearch", fg = 'white', bg = "#2b4ed9", font=("Helvetica", 30), relief = RAISED,command=lambda: func("Other Button Works"))
+bOther.grid(row = 3, column = 4, pady = 35)
+
+
+bGIR = Button(window, text = "Generate \nIntelligence \nReport", fg = 'white', bg = "#f5b36c", font=("Helvetica", 30), relief = RAISED,command=lambda: func("GIR Button Works"))
+bGIR.grid(row = 4, column = 0, pady = 35)
+
+bCGM = Button(window, text = "Capture And \nGenerate \nMetadata", fg = 'white', bg = "#f5b36c", font=("Helvetica", 30), relief = RAISED,command=lambda: func("CGM Button Works"))
+bCGM.grid(row = 4, column = 2, pady = 35)
+
+
+bGDC = Button(window, text = "Generate \nData \nCollection", fg = 'white', bg = "#f5b36c", font=("Helvetica", 30), relief = RAISED,command=lambda: func("GDC Button Works"))
+bGDC.grid(row = 4, column = 4, pady = 35)
+
+window.mainloop()
