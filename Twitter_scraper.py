@@ -56,7 +56,7 @@ if __name__ == '__main__':
     auth.set_access_token(access_key, access_secret)
     api = tweepy.API(auth)
     
-    print("Enter 1 for Twitter IP Scrape or any other number for Hashtag scrape")
+    print("Enter 1 for Twitter Hashtag scrape or any other number for IP Scrape  ")
     x= input()
     if x== '1':                                         
         # Enter Hashtag and initial date
