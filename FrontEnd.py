@@ -1,4 +1,4 @@
-import py3-crawler as crawler
+import py3_crawler as crawler
 import Twitter_Hashtag_Scraper as hash
 import Twitter_IPScraper as ips
 import tkinter as tk
