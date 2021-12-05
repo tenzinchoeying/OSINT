@@ -88,7 +88,7 @@ else:
 	export_data = zip_longest(*final_data, fillvalue = '')
 	
 	#Writing all extarcted IOCs to a CSV file
-	with open('/root/data.csv', 'wb+') as myfile:
+	with open('/root/data.csv', 'w+') as myfile:
 		wr = csv.writer(myfile)
 		wr.writerow(row_title)
 		wr.writerows(export_data)
