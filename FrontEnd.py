@@ -1,6 +1,6 @@
-import py3_crawler as crawler
-import Twitter_Hashtag_Scraper as hash
-import Twitter_IPScraper as ips
+from py3_crawler import *
+from Twitter_Hashtag_Scraper import *
+from Twitter_IPScraper import *
 import tkinter as tk
 
 window = tk.Tk()
@@ -20,7 +20,7 @@ url_var = tk.StringVar()
 def crawlerSumbit():
     url = url_var.get()
     print("URL is: " + url)
-    crawler.crawer(url)
+    crawler(url)
     url_var.set("")
 
 def hashSumbit():
@@ -38,7 +38,7 @@ def hashSumbit():
     print("Hashtag is: " + hashtag)
     print("Date is: " + date)
 
-    hash.hashScrape(key, sKey, token, sToken, hashtag, date)
+    hashScrape(key, sKey, token, sToken, hashtag, date)
     
     key_var.set("")
     sKey_var.set("")
@@ -62,7 +62,7 @@ def idSumbit():
     print("Twitter ID is: " + twitterId)
     print("Num is: " + num)
 
-    ips.IPScraper(key, sKey, token, sToken, twitterId, num)
+    IPScraper(key, sKey, token, sToken, twitterId, num)
     
     key_var.set("")
     sKey_var.set("")
